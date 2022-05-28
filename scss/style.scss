@@ -1,0 +1,291 @@
+@import "./partials/variables";
+@import "./partials/classes";
+@import "./partials/reset";
+@import "./partials/base";
+@import "./partials/mixins";
+
+nav {
+  background-color: $primary;
+  color: wheat;
+  position: sticky;
+  .brand-logo {
+    font-family: $title-font;
+    font-size: 3rem;
+    line-height: 1.2;
+    color: wheat;
+    text-decoration: none;
+    transition: all 0.2s ease-in-out;
+    cursor: pointer;
+    &:hover {
+      color: darken($tertiary, 10%);
+    }
+  }
+  .container {
+    display: flex;
+    width: 100%;
+    padding: 2rem;
+    justify-content: space-between;
+  }
+
+  @include md {
+    ul {
+      display: none;
+    }
+  }
+
+  @include sm {
+    ul {
+      display: none;
+    }
+  }
+}
+
+/* ============= SECTION HEADER ===============*/
+
+header {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  background-image: linear-gradient(135deg, #022d3585 20%, #00aec136),
+    url(../assets/images/lotus2.png);
+  background-size: cover;
+  background-position: center;
+  color: white;
+  padding: 15rem;
+
+  .brand {
+    text-align: center;
+    margin: auto 0;
+    align-items: center;
+    justify-content: center;
+    p {
+      font-family: $title-font;
+      font-size: 3rem;
+    }
+    h1 {
+      font-family: $title-font;
+      font-size: 5rem;
+      color: $gold;
+    }
+  }
+
+  @include md {
+    .brand {
+      max-width: 100%;
+      text-align: center;
+      margin: auto 0;
+      align-items: center;
+      justify-content: center;
+      p {
+        font-family: $title-font;
+        font-size: 2.5rem;
+      }
+      h1 {
+        font-family: $title-font;
+        font-size: 3.5rem;
+        color: $gold;
+      }
+    }
+  }
+
+  @include sm {
+    .brand {
+      text-align: center;
+      margin: auto 0;
+      align-items: center;
+      justify-content: center;
+      p {
+        font-family: $title-font;
+        font-size: 2rem;
+      }
+      h1 {
+        font-family: $title-font;
+        font-size: 3rem;
+        color: $gold;
+      }
+    }
+  }
+}
+
+/* ============= SECTION FORMULES ===============*/
+
+#formules {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+  margin: 2rem;
+  .container {
+    display: flex;
+  }
+  .card {
+    img {
+      object-fit: cover;
+    }
+    h2 {
+      font-size: 2rem;
+      margin-top: 1rem;
+      font-weight: 700;
+      line-height: 1.2;
+      color: #333;
+    }
+    p {
+      text-align: center;
+    }
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 2rem;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+  }
+
+  @include md {
+    .container {
+      flex-direction: column;
+    }
+    .card {
+      img {
+        object-fit: cover;
+      }
+      h2 {
+        font-size: 2rem;
+        margin-top: 1rem;
+        font-weight: 700;
+        line-height: 1.2;
+        color: #333;
+      }
+      p {
+        text-align: center;
+      }
+    }
+  }
+
+  @include sm {
+    .container {
+      flex-direction: column;
+    }
+    .card {
+      img {
+        object-fit: cover;
+      }
+      h2 {
+        font-size: 2rem;
+        margin-top: 1rem;
+        font-weight: 700;
+        line-height: 1.2;
+        color: #333;
+      }
+      p {
+        text-align: center;
+      }
+    }
+  }
+}
+
+/* ============= SECTION ABOUT ME===============*/
+
+#about {
+  .container {
+    display: flex;
+    margin: 2rem auto;
+    img {
+      object-fit: cover;
+      width: 40%;
+    }
+    .about {
+      padding: 0 2rem;
+    }
+    button {
+      margin: 2rem 0;
+    }
+  }
+
+  @include md {
+    .container {
+      flex-direction: column;
+      width: 100%;
+      img {
+        object-fit: cover;
+        margin: 0 auto;
+      }
+    }
+  }
+
+  @include sm {
+    .container {
+      flex-direction: column;
+      width: 100%;
+      img {
+        object-fit: cover;
+        margin: 0 auto;
+      }
+    }
+  }
+}
+
+/* ============= SECTION cCONTACT===============*/
+
+#contact {
+  background-image: linear-gradient(135deg, #022d3585 20%, #00aec136),
+    url(../assets/images/lotus2.png);
+  background-size: cover;
+  background-position: center;
+  color: white;
+  padding: 3rem;
+  .container {
+    display: flex;
+    justify-content: space-between;
+  }
+  .contact {
+    width: 100%;
+    h2,
+    p {
+      font-family: $title-font;
+      text-align: center;
+    }
+    h2 {
+      font-size: 4rem;
+      color: $gold;
+    }
+    p {
+      font-size: 2rem;
+    }
+  }
+  form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 2rem;
+    padding: 2rem;
+
+    input,
+    textarea {
+      color: white;
+      font-family: poppins;
+      width: 350px;
+      padding: 1rem;
+      margin: 1rem 0.5rem;
+      border: none;
+      box-shadow: $box-shadow;
+      border-radius: 7px;
+      background-color: #00000036;
+      &:focus {
+        outline: none;
+      }
+    }
+  }
+}
+
+/* ============= SECTION FOOTER===============*/
+
+footer {
+  text-align: center;
+  color: $gold;
+  height: 5rem;
+  padding: 5rem;
+  background-color: $primary;
+}
