@@ -64,16 +64,17 @@ hr {
 }
 
 button {
+  font-weight: 300px;
   border: 0;
   border-radius: 7px;
   padding: 1rem 1.2rem;
   margin: 1rem 0;
-  background: wheat;
-  color: rgb(97, 94, 94);
+  background: $primary;
+  color: wheat;
   cursor: pointer;
   transition: all 0.2s ease-in-out;
 
   &:hover {
-    background: lighten(wheat, 10%);
+    background: lighten($primary, 10%);
   }
 }

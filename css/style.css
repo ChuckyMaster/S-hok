@@ -81,17 +81,18 @@ hr {
 }
 
 button {
+  font-weight: 300px;
   border: 0;
   border-radius: 7px;
   padding: 1rem 1.2rem;
   margin: 1rem 0;
-  background: wheat;
-  color: rgb(97, 94, 94);
+  background: #140c48;
+  color: wheat;
   cursor: pointer;
   transition: all 0.2s ease-in-out;
 }
 button:hover {
-  background: #fbf2e0;
+  background: #201374;
 }
 
 /* Landscape phones and down */
@@ -99,7 +100,7 @@ button:hover {
 /* Portrait tablet to landscape and desktop */
 /* Large desktop */
 nav {
-  background-color: #022d35;
+  background-color: #140c48;
   color: wheat;
   position: sticky;
 }
@@ -108,6 +109,7 @@ nav .brand-logo {
   font-size: 3rem;
   line-height: 1.2;
   color: wheat;
+  width: 150px;
   text-decoration: none;
   transition: all 0.2s ease-in-out;
   cursor: pointer;
@@ -120,6 +122,11 @@ nav .container {
   width: 100%;
   padding: 2rem;
   justify-content: space-between;
+}
+nav .container ul {
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
 }
 @media (min-width: 768px) and (max-width: 979px) {
   nav ul {
@@ -137,7 +144,7 @@ header {
   display: flex;
   justify-content: center;
   flex-direction: column;
-  background-image: linear-gradient(135deg, rgba(2, 45, 53, 0.5215686275) 20%, rgba(0, 174, 193, 0.2117647059)), url(../assets/images/lotus2.png);
+  background-image: linear-gradient(145deg, rgba(20, 12, 72, 0.4705882353) 20%, rgba(0, 84, 193, 0.2117647059)), url(../assets/images/spa.png);
   background-size: cover;
   background-position: center;
   color: white;
@@ -280,6 +287,10 @@ header .brand h1 {
 #about .container button {
   margin: 2rem 0;
 }
+#about .container span {
+  font-weight: 700;
+  color: #140c48;
+}
 @media (min-width: 768px) and (max-width: 979px) {
   #about .container {
     flex-direction: column;
@@ -303,7 +314,7 @@ header .brand h1 {
 
 /* ============= SECTION cCONTACT===============*/
 #contact {
-  background-image: linear-gradient(135deg, rgba(2, 45, 53, 0.5215686275) 20%, rgba(0, 174, 193, 0.2117647059)), url(../assets/images/lotus2.png);
+  background-image: linear-gradient(145deg, rgba(20, 12, 72, 0.4705882353) 20%, rgba(0, 84, 193, 0.2117647059)), url(../assets/images/oil.png);
   background-size: cover;
   background-position: center;
   color: white;
@@ -346,11 +357,15 @@ header .brand h1 {
   border: none;
   box-shadow: 0 1px 2px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
   border-radius: 7px;
-  background-color: rgba(0, 0, 0, 0.2117647059);
+  background-color: rgba(254, 254, 254, 0.2196078431);
 }
 #contact form input:focus,
 #contact form textarea:focus {
   outline: none;
+}
+#contact form input::placeholder,
+#contact form textarea::placeholder {
+  color: white;
 }
 
 /* ============= SECTION FOOTER===============*/
@@ -359,7 +374,7 @@ footer {
   color: wheat;
   height: 5rem;
   padding: 5rem;
-  background-color: #022d35;
+  background-color: #140c48;
 }
 
 /*# sourceMappingURL=style.css.map */

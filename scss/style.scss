@@ -8,11 +8,13 @@ nav {
   background-color: $primary;
   color: wheat;
   position: sticky;
+ 
   .brand-logo {
     font-family: $title-font;
     font-size: 3rem;
     line-height: 1.2;
     color: wheat;
+    width: 150px;
     text-decoration: none;
     transition: all 0.2s ease-in-out;
     cursor: pointer;
@@ -25,6 +27,11 @@ nav {
     width: 100%;
     padding: 2rem;
     justify-content: space-between;
+    ul {
+      justify-content: center;
+      align-items: center;
+      margin: 0 auto;
+    }
   }
 
   @include md {
@@ -46,8 +53,8 @@ header {
   display: flex;
   justify-content: center;
   flex-direction: column;
-  background-image: linear-gradient(135deg, #022d3585 20%, #00aec136),
-    url(../assets/images/lotus2.png);
+  background-image: linear-gradient(145deg, #140c4878 20%, #0054c136),
+    url(../assets/images/spa.png);
   background-size: cover;
   background-position: center;
   color: white;
@@ -201,6 +208,10 @@ header {
     button {
       margin: 2rem 0;
     }
+    span {
+      font-weight: 700;
+      color:$primary;
+    }
   }
 
   @include md {
@@ -229,8 +240,8 @@ header {
 /* ============= SECTION cCONTACT===============*/
 
 #contact {
-  background-image: linear-gradient(135deg, #022d3585 20%, #00aec136),
-    url(../assets/images/lotus2.png);
+  background-image: linear-gradient(145deg, #140c4878 20%, #0054c136),
+    url(../assets/images/oil.png);
   background-size: cover;
   background-position: center;
   color: white;
@@ -263,7 +274,8 @@ header {
     padding: 2rem;
 
     input,
-    textarea {
+    textarea,
+     {
       color: white;
       font-family: poppins;
       width: 350px;
@@ -272,9 +284,12 @@ header {
       border: none;
       box-shadow: $box-shadow;
       border-radius: 7px;
-      background-color: #00000036;
+      background-color: #fefefe38;
       &:focus {
         outline: none;
+      }
+      &::placeholder {
+        color: white;
       }
     }
   }
